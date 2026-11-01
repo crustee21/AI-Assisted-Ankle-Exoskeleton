@@ -1,0 +1,5 @@
+fc  (HLS: Linear, produces the logit)
+  input  (32,)       fc_<case>_input.dat  (= lstm output)
+  output (1,)        fc_<case>_golden_output.dat
+  weights(1,32)      fc_weights.dat       bias (1,) fc_bias.dat
+  logit = weights @ input + bias;   probability = 1/(1+exp(-logit))
