@@ -1,0 +1,6 @@
+conv2  (HLS: Conv1d only, pre-activation)
+  input  (16, 16)    conv2_<case>_input.dat  (= pool1 output)   idx = ic*16 + t
+  output (32, 16)    conv2_<case>_golden_output.dat             idx = oc*16 + t
+  weights(32,16, 3)  conv2_weights.dat                idx = oc*(16*3)+ic*3+k
+  bias   (32,)       conv2_bias.dat
+  out[oc,t] = bias[oc] + sum_ic sum_k in[ic, t-1+k]*w[oc,ic,k]   (zero-pad, stride 1)
