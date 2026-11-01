@@ -1,0 +1,17 @@
+lstm  (HLS: single-layer LSTM, 8 timesteps, h_0=c_0=0)
+  input  (8, 32)     lstm_<case>_input.dat   idx = t*32 + f   (timestep-major, post-permute)
+  output (32,)       lstm_<case>_golden_output.dat  (final hidden h_7; cell state c NOT dumped)
+
+  Weights are split PER GATE (gate in i,f,g,o); each matrix stored row-major,
+  row = output unit, col = input feature (idx = unit*width + col):
+    w_ih_<gate> (32,32)  lstm_w_ih_<gate>.dat     (input->gate)
+    w_hh_<gate> (32,32)  lstm_w_hh_<gate>.dat     (recurrent h->gate)
+    b_<gate>    (32,)    lstm_b_<gate>.dat        = bias_ih + bias_hh  (the two PyTorch
+                                                    biases are folded into one)
+  for t in 0..7:  x = input[t]   (32-vec)
+    i = sigmoid(w_ih_i @ x + w_hh_i @ h + b_i)
+    f = sigmoid(w_ih_f @ x + w_hh_f @ h + b_f)
+    g = tanh   (w_ih_g @ x + w_hh_g @ h + b_g)
+    o = sigmoid(w_ih_o @ x + w_hh_o @ h + b_o)
+    c = f*c + i*g;   h = o*tanh(c)
+  output = h  (after t=7).   PyTorch gate order is i,f,g,o (input,forget,cell,output).
