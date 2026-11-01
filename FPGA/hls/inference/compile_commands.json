@@ -1,0 +1,113 @@
+[
+  {
+    "directory": "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=inference_stream",
+      "-IC:/Users/cocol/Ruby_Proj/workspace/HLS/header",
+      "-c",
+      "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference\\..\\conv1\\conv1.cpp"
+    ],
+    "file": "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference\\..\\conv1\\conv1.cpp"
+  },
+  {
+    "directory": "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=inference_stream",
+      "-IC:/Users/cocol/Ruby_Proj/workspace/HLS/header",
+      "-c",
+      "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference\\inference.cpp"
+    ],
+    "file": "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference\\inference.cpp"
+  },
+  {
+    "directory": "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=inference_stream",
+      "-IC:/Users/cocol/Ruby_Proj/workspace/HLS/header",
+      "-c",
+      "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference\\..\\Relu_Max_1\\relu_max_1.cpp"
+    ],
+    "file": "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference\\..\\Relu_Max_1\\relu_max_1.cpp"
+  },
+  {
+    "directory": "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=inference_stream",
+      "-IC:/Users/cocol/Ruby_Proj/workspace/HLS/header",
+      "-c",
+      "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference\\..\\Relu_Max_2\\relu_max_2.cpp"
+    ],
+    "file": "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference\\..\\Relu_Max_2\\relu_max_2.cpp"
+  },
+  {
+    "directory": "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=inference_stream",
+      "-IC:/Users/cocol/Ruby_Proj/workspace/HLS/header",
+      "-c",
+      "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference\\..\\LSTM\\LSTM.cpp"
+    ],
+    "file": "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference\\..\\LSTM\\LSTM.cpp"
+  },
+  {
+    "directory": "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=inference_stream",
+      "-IC:/Users/cocol/Ruby_Proj/workspace/HLS/header",
+      "-c",
+      "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference\\..\\conv2\\conv2.cpp"
+    ],
+    "file": "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference\\..\\conv2\\conv2.cpp"
+  },
+  {
+    "directory": "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=inference_stream",
+      "-IC:/Users/cocol/Ruby_Proj/workspace/HLS/header",
+      "-c",
+      "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference\\..\\linear\\fc.cpp"
+    ],
+    "file": "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference\\..\\linear\\fc.cpp"
+  },
+  {
+    "directory": "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\include",
+      "-IC:/Users/cocol/Ruby_Proj/workspace/HLS/header",
+      "-c",
+      "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference\\inference_TB.cpp"
+    ],
+    "file": "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\inference\\inference_TB.cpp"
+  }
+]
