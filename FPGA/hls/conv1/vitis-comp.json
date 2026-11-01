@@ -1,0 +1,13 @@
+{
+  "name": "conv1",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "conv1"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}
