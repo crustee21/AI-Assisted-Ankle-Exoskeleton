@@ -1,0 +1,17 @@
+inference  (HLS: the full chain, conv1 -> pool1 -> conv2 -> pool2 -> lstm -> fc)
+  input  (2, 32)     inference_<case>_input.dat          idx = ch*32 + t
+                                                         (identical to conv1_<case>_input.dat)
+  output (1,)        inference_<case>_golden_output.dat  the logit
+                                                         (identical to fc_<case>_golden_output.dat)
+
+  No weight files here: the integrated top level reads its weights from the
+  generated ROM header HLS/header/footdrop_weights.h, not from .dat files.
+
+  This is the END-TO-END reference. The intermediate tensors never leave the DUT,
+  so the only observable is the logit and the only invariant that must hold is
+  sign(logit) == sign(golden). Magnitude drifts ~5e-3 through the quantized chain
+  at <16,6>; that is expected and non-fatal. A sign disagreement is a decision
+  flip and is always fatal.
+
+  max_range is exported but is NOT part of the sign-off set: its input reaches
+  |142| and intentionally overflows <16,6>. It is the range canary.
