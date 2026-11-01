@@ -1,0 +1,13 @@
+{
+  "name": "Relu_Max_2",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "Relu_Max_2"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}
