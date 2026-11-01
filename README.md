@@ -58,5 +58,3 @@ The model successfully performed real-time intent prediction and provided powere
 - **PYNQ and Python:** Provide hardware access and run the data collection and live assistance pipeline
 - **PyTorch:** Machine Learning framework
 - **Jupyter notebooks:** Support data collection, model development, and live testing
-
-The project uses a field programmable gate array (FPGA) with a convolutional neural network with long short-term memory (CNN-LSTM) that predicts walk intent. The CNN-LSTM uses an inertial measurement unit (IMU) and an electromyography sensor (EMG) to make its prediction. There is also a deterministic safety layer that checks two force sensitive resistors (FSRs) on the bottom of the shoe to ensure that the physical evidence agrees with the model's prediction.
