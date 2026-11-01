@@ -1,0 +1,4 @@
+pool2  (HLS: ReLU then MaxPool1d/2, no params)
+  input  (32, 16)    pool2_<case>_input.dat  (= conv2 output)
+  output (32, 8)     pool2_<case>_golden_output.dat   idx = oc*8 + t
+  out[oc,t] = max( max(in[oc,2t],0), max(in[oc,2t+1],0) )
