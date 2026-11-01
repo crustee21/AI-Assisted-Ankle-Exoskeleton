@@ -1,0 +1,6 @@
+conv1  (HLS: Conv1d only, pre-activation)
+  input  (2, 32)     conv1_<case>_input.dat           idx = ch*32 + t
+  output (16, 32)    conv1_<case>_golden_output.dat   idx = oc*32 + t
+  weights(16, 2, 5)  conv1_weights.dat                idx = oc*(2*5)+ic*5+k
+  bias   (16,)       conv1_bias.dat
+  out[oc,t] = bias[oc] + sum_ic sum_k in[ic, t-2+k]*w[oc,ic,k]   (zero-pad, stride 1)
