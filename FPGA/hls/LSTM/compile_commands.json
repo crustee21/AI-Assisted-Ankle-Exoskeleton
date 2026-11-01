@@ -1,0 +1,29 @@
+[
+  {
+    "directory": "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\LSTM",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=LSTM",
+      "-IC:/Users/cocol/Ruby_Proj/workspace/HLS/header",
+      "-c",
+      "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\LSTM\\LSTM.cpp"
+    ],
+    "file": "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\LSTM\\LSTM.cpp"
+  },
+  {
+    "directory": "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\LSTM",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\include",
+      "-IC:/Users/cocol/Ruby_Proj/workspace/HLS/header",
+      "-c",
+      "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\LSTM\\LSTM_TB.cpp"
+    ],
+    "file": "C:\\FPGA-predict-walk-intent-main\\FPGA-predict-walk-intent-main\\HLS\\LSTM\\LSTM_TB.cpp"
+  }
+]

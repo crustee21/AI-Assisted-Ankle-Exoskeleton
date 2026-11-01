@@ -1,0 +1,13 @@
+{
+  "name": "LSTM",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "LSTM"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}
